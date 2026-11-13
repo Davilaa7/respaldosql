@@ -1,9 +1,0 @@
--- v1.2: Agregar tabla de Auditoría para el control de cambios de alumnos
-CREATE TABLE dbo.AuditoriaAlumnos (
-    AuditoriaID INT IDENTITY(1,1) PRIMARY KEY,
-    AlumnoID INT NOT NULL,
-    Accion VARCHAR(50) NOT NULL,
-    FechaModificacion DATETIME DEFAULT GETDATE(),
-    UsuarioModificacion VARCHAR(100) NOT NULL
-);
-GO
