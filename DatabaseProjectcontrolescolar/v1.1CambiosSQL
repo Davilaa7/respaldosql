@@ -1,0 +1,8 @@
+-- v1.1: Agregar columna de estado e índice en la tabla Alumnos
+ALTER TABLE dbo.Alumnos
+ADD Estatus VARCHAR(20) DEFAULT 'Activo';
+GO
+
+CREATE NONCLUSTERED INDEX IX_Alumnos_Estatus
+ON dbo.Alumnos(Estatus);
+GO
